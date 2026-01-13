@@ -1,0 +1,77 @@
+/* App.css - layout and utility classes used by components */
+
+body{
+  padding-top: 85px;
+}
+
+.container {
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.navbar-inner {
+  padding: 20px 0;
+}
+
+.btn-primary {
+  background: rgb(241, 237, 237);
+  color: #9101F2;
+  border-color: #1e40af;
+}
+
+
+/* mobile */
+.hamburger {
+  display: none;
+  font-size: 22px;
+  background: transparent;
+  border: none;
+}
+@media (max-width: 768px) {
+  .nav-center {
+    display: none;
+  }
+  .nav-right {
+    display: none;
+  }
+  .hamburger {
+    display: inline-block;
+  }
+  .mobile-menu {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-top: 1px solid #e5e7eb;
+    padding: 12px;
+    z-index: 70;
+  }
+}
+/* cards */
+.card {
+  background: white;
+  border: 1px solid #e6e9ee;
+  border-radius: 8px;
+  padding: 12px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
